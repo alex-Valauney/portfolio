@@ -1,0 +1,69 @@
+body {
+    background-color: gray;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+header {
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    z-index: 50;
+    background-size: cover;
+}
+
+ul.NavBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0%;
+    width: 101%;
+}
+
+ul.NavBar li {
+    float: left;
+}
+
+ul.NavBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.NavBar li a:hover:not(.home) {
+    background-color: #111;
+}
+
+ul.NavBar li a.home {
+    background-color: #04aa6d;
+}
+
+ul.NavBar li.right {
+    float: right;
+}
+
+/* Téléphone */
+
+@media screen and (max-width: 600px) {
+    body {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    
+    ul.NavBar li.right,
+
+    ul.NavBar li {
+        float: none;
+    }
+    
+}
