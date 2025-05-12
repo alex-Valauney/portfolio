@@ -1,10 +1,16 @@
+/* Bleu de France #318CE7 */
+/* French Blue #0072BB */
+/* French rose #F64A8A */
+/* French mauve #D473D4 */
+/* French violet #8806CE */
+/* French gray #BEBFC5 */
+
 body {
-    background-color: gray;
+    background-color: #BEBFC5;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-size: 20px;
 
 }
@@ -22,7 +28,7 @@ ul.NavBar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #0072BB;
     position: fixed;
     top: 0%;
     width: 101%;
@@ -34,36 +40,80 @@ ul.NavBar li {
 
 ul.NavBar li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-ul.NavBar li a:hover:not(.home) {
-    background-color: #111;
+ul.NavBar li a:hover:not(.Home) {
+    background-color: #318CE7;
 }
 
-ul.NavBar li a.home {
-    background-color: #04aa6d;
+ul.NavBar li a.Home {
+    background-color: #D473D4;
 }
 
 ul.NavBar li.right {
     float: right;
 }
 
-/* Téléphone */
+.Lien {
+    text-align: left;
+    display: flex;
+}
 
-@media screen and (max-width: 600px) {
-    body {
-        word-wrap: break-word;
-        word-break: break-all;
-    }
-    
-    ul.NavBar li.right,
+a {
+    border-style: solid;
+    display: flex;
+    flex-direction: column
+}
 
-    ul.NavBar li {
-        float: none;
-    }
-    
+ul.Lien {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.Lien a {
+    float: left;
+    display: flex;
+}
+
+
+ul.ProjetJS {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.ProjetJS li {
+    float: left;
+}
+
+ul.ProjetJS li a {
+    display: block;
+    flex-direction: column;
+    width:250px;
+    height: 175px;
+}
+
+ul.ProjetGO {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.ProjetGO li {
+    float: left;
+}
+
+ul.ProjetGO li a {
+    display: block;
+    flex-direction: column;
+    width: 250px;
+    height: 175px;
 }
